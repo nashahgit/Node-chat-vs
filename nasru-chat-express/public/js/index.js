@@ -14,5 +14,5 @@ socket.on('chat', function (msg) {
 });
 
 $(window).load(function () {
-    $('#myModal').modal('show');
+    $('.modal').modal('show');
 });
