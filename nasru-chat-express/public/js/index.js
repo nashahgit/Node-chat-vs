@@ -1,6 +1,6 @@
 ﻿
 var socket = io();
-var user = 'Nasru: ';
+var user;
 $('#send-message-btn').click(function () {
     var msg = $('#message-box').val();
     socket.emit('chat', msg);
@@ -11,4 +11,8 @@ $('#send-message-btn').click(function () {
 
 socket.on('chat', function (msg) {
     $('#messages').append($('<p>').text(msg));
+});
+
+$(window).load(function () {
+    $('#myModal').modal('show');
 });

@@ -1,5 +1,17 @@
 ﻿extends layout
 block content
+  .modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-body
+          form.form-horizontal
+            .form-group
+              .col-sm-10
+                input(type="name" class="form-control" id="name" placeholder="What's your name")
+            
+        .modal-footer
+           button.btn-primary OK
+               
   .wrap
     .container
       .header
