@@ -9,6 +9,11 @@ $('#send-message-btn').click(function () {
     return false;
 });
 
+$('#submit-name').click(function () {
+    user = $('#name').val();
+    $('.modal').modal('hide');
+});
+
 socket.on('chat', function (msg) {
     $('#messages').append($('<p>').text(msg));
 });
