@@ -4,7 +4,7 @@ var user;
 $('#send-message-btn').click(function () {
     var msg = $('#message-box').val();
     socket.emit('chat', msg);
-    $('#messages').append($('<p>').text(user + msg));
+    $('#messages').append($('<p>').text(user + ' : ' + msg));
     $('#message-box').val('');
     return false;
 });
