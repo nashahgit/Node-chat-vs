@@ -32,11 +32,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="js\bootstrap.js" />
+    <Compile Include="js\bootstrap.min.js" />
+    <Compile Include="public\js\bootstrap.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <None Include="nasru-chat-express.pubxml" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style.styl" />
     <Content Include="package.json" />
+    <Content Include="public\css\bootstrap-theme.css" />
+    <Content Include="public\css\bootstrap-theme.css.map" />
+    <Content Include="public\css\bootstrap-theme.min.css" />
+    <Content Include="public\css\bootstrap.css" />
+    <Content Include="public\css\bootstrap.css.map" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\style.css" />
     <Content Include="public\css\style.styl" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
@@ -45,9 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
-    <Folder Include="public\javascripts\" />
+    <Folder Include="public\js\" />
     <Folder Include="public\css\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
